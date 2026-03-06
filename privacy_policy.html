@@ -168,73 +168,79 @@
         <header>
             <h1>Privacy Policy</h1>
             <p class="subtitle">Video Player Pro — All-in-One Media Hub</p>
-            <p class="last-updated">Last Updated: March 2026</p>
+            <p class="last-updated">Last Updated: March 7, 2026</p>
         </header>
 
         <div class="section-card">
             <h2>1. Introduction</h2>
             <p>Welcome to <strong>Video Player Pro</strong>, developed by <strong>GUNGSA STUDIO</strong>. We are
-                committed to protecting your personal information and your right to privacy. If you have any questions
-                or concerns about our policy, or our practices with regards to your personal information, please contact
-                us.</p>
-            <p>When you use our mobile application ("App"), you trust us with your personal information. We take your
-                privacy very seriously. In this privacy policy, we describe our privacy practices to explain to you in
-                the clearest way possible what information we collect, how we use it, and what rights you have in
-                relation to it.</p>
+                committed to protecting your personal information and your right to privacy. This policy describes or
+                practices with regards to the information we (and the app) process.</p>
+            <p>Video Player Pro is designed to be a privacy-first application. Most of its core functionality operates
+                entirely offline, and network communication is strictly limited to features you explicitly interact
+                with.</p>
         </div>
 
         <div class="section-card">
-            <h2>2. Information We Collect</h2>
+            <h2>2. Information Lifecycle & Permissions</h2>
 
-            <h3>Local Storage and Permissions</h3>
-            <p>Video Player Pro is primarily a local media player. To function properly, the App requires certain
-                permissions to access files on your device:</p>
+            <h3>Local Media Access</h3>
+            <p>The App requires the following permissions to manage your local entertainment library:</p>
             <ul>
-                <li><strong>Read Media/Storage:</strong> Used strictly to scan, catalog, and playback video and audio
-                    files stored locally on your device.</li>
-                <li><strong>Manage External Storage (All Files Access):</strong> Required for the "Secure Vault" and
-                    file deletion features, allowing the App to securely move, hide, or delete media files upon your
-                    explicit request.</li>
+                <li><strong>Media Access (Video/Audio/Storage):</strong> Strictly used to scan, index, and play back
+                    files
+                    stored on your device.</li>
+                <li><strong>Manage External Storage:</strong> Required for the <strong>Secure Vault</strong> and file
+                    management (rename/delete). This allows the app to move your private media to a protected internal
+                    directory.</li>
             </ul>
 
-            <h3>IPTV URLs & Playlists</h3>
-            <p>If you use the IPTV streaming feature, the App processes the URLs you provide locally on your device. We
-                do not track, collect, or store your IPTV playlists or streaming habits on our external servers.</p>
-        </div>
-
-        <div class="section-card">
-            <h2>3. Secure Vault & Data Security</h2>
-            <p>We use local PIN encryption and randomized file naming (UUIDs) to protect files moved to the "Secure
-                Vault". These files are isolated within the App's private directory to prevent them from appearing in
-                your device's gallery or being scanned by other applications.</p>
-            <p><strong>Important:</strong> Your Vault PIN and the actual media files are stored locally on your device.
-                We do not back up your Vault PIN or files. If you forget your PIN or uninstall the App without restoring
-                your Vault files first, that data may be permanently lost.</p>
-        </div>
-
-        <div class="section-card">
-            <h2>4. Third-Party Services & Analytics</h2>
-            <p>Video Player Pro is designed with privacy in mind. Currently, the App operates locally and does not
-                actively transmit your private media usage data, viewing history, or personal identifiers to third-party
-                tracking services or analytics platforms. Any network requests made by the App are exclusively for:</p>
+            <h3>YouTube & Streaming</h3>
+            <p>When you use the YouTube search or playback featured, the App interacts with third-party APIs (via
+                NewPipeExtractor) to fetch public video metadata and stream links.
             <ul>
-                <li>Fetching remote IPTV streams requested by you.</li>
-                <li>Retrieving remote subtitles (if applicable and requested).</li>
+                <li><strong>No Tracking:</strong> We do not collect your search queries or watch history.</li>
+                <li><strong>Anonymized Requests:</strong> Network requests are made directly to media instances, and
+                    we enforce encrypted <strong>HTTPS</strong> communication for all such requests.</li>
             </ul>
+            </p>
+
+            <h3>IPTV Service</h3>
+            <p>IPTV playlist URLs and stream data are processed locally on your device. We do not transmit your
+                playlist contents or streaming activity to our servers.</p>
+        </div>
+
+        <div class="section-card">
+            <h2>3. Secure Vault & Privacy Protection</h2>
+            <p>The <strong>Vault</strong> feature provides an additional layer of security for your sensitive media:</p>
+            <ul>
+                <li><strong>Local Pin Hashing:</strong> Your access PIN is protected using <strong>SHA-256</strong>
+                    industry-standard hashing. We never store or transmit your actual PIN.</li>
+                <li><strong>Isolation:</strong> Files moved to the Vault are stored in the App's private internal
+                    storage, making them invisible to galleries and other applications.</li>
+                <li><strong>No Cloud Backups:</strong> To maximize privacy, Vault data is <strong>excluded from
+                        automated Android cloud backups</strong>. Your private files stay strictly on your physical
+                    device.</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>4. Network Security</h2>
+            <p>We implement a strict <strong>Network Security Configuration</strong> that prohibits cleartext (HTTP)
+                traffic. All data transmitted by the app (for YouTube info, subtitles, or streams) is sent over
+                encrypted <strong>TLS (HTTPS)</strong> channels to prevent "man-in-the-middle" attacks and ensure your
+                connection safety.</p>
         </div>
 
         <div class="section-card">
             <h2>5. Changes to This Policy</h2>
             <p>We may update this privacy policy from time to time. The updated version will be indicated by an updated
-                "Last Updated" date and the updated version will be effective as soon as it is accessible. We encourage
-                you to review this privacy policy frequently to be informed of how we are protecting your information.
-            </p>
+                "Last Updated" date. We encourage you to review this policy frequently.</p>
         </div>
 
         <div class="section-card">
             <h2>6. Contact Us</h2>
-            <p>If you have questions or comments about this policy or the application in general, you may contact us
-                using the following details:</p>
+            <p>For any questions or concerns, please reach out to us at:</p>
 
             <div class="contact-box">
                 <strong>Developer</strong>
